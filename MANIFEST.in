@@ -1,0 +1,4 @@
+include README.md
+include native_stockfish.cpp
+include pyproject.toml
+include LICENSE
