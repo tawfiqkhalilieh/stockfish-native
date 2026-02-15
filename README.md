@@ -18,10 +18,15 @@ cd Stockfish/src
 make -j profile-build
 ```
 
-> Or you can use use the binray from the website.
-
+> Or you can use the binary from the website
 
 ## Installation
+
+### From PyPi
+
+```bash
+pip install stockfish-native
+```
 
 ### From Source
 
@@ -72,7 +77,7 @@ Analyzes the given FEN position.
 - `depth`: The search depth.
 - `count`: The number of top moves to return.
 
-Returns a list of top moves.
+Returns a tuple of top moves.
 
 ### `client.stop()`
 
