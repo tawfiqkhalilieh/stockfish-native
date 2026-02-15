@@ -40,7 +40,7 @@ static int Stockfish_init(StockfishClient *self, PyObject *args,
   const char *stockfish_path_param;
 
   if (!PyArg_ParseTuple(args, "s", &stockfish_path_param)) {
-    return 0; // Python exception is automatically set
+    return -1; // Python exception is automatically set
   }
 
   int in[2], out[2];
